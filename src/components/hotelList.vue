@@ -147,7 +147,6 @@ export default {
           (dateMillisecond2 - dateMillisecond1) / (1000 * 60 * 60 * 24)
         );
 
-        // calculating hotel price according to total nights number
         this.filteredHotels.filter(hotel => {
           for (let i = 0; i < hotel.availability.length; i++) {
             let newFromDateInMilliseconds = this.convertDateToMillisecond(
